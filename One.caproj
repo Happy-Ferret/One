@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>One</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>Mark Bauermeister</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>Happy-Ferret.One</app-id>
+    <unique-id>t4zrro740hcz</unique-id>
+    <saved-with-version>17000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1024</width>
+        <height>768</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <first-layout>Level1</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">High quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale inner</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="Sprite" sid="9598803367436116">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5950276714008816" speed="5">
+                    <frame duration="1" hotspotX="1.34884" hotspotY="0.402597" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="9653791182317695">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7765886887686901" speed="5">
+                    <frame duration="1" hotspotX="0.535714" hotspotY="0.428571" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="3579491131322747">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438008720040933" speed="5">
+                    <frame duration="1" hotspotX="1.45349" hotspotY="1.62338" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ShadowLight" sid="5848432346022141">
+            <plugin id="shadowlight" />
+        </object-type>
+        <object-type name="Particles" sid="8412025721790536">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="4505586658587406">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Sprite2" sid="5147922464081675">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ShadowCaster" sid="5977743250990602">
+                    <behavior id="shadowcaster" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3671964161192206" speed="5">
+                    <frame duration="1" hotspotX="-0.25" hotspotY="1.83333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="8834575375266039">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="5428467693594281">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ShadowCaster" sid="6951871607722538">
+                    <behavior id="shadowcaster" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9929821213794467" speed="5">
+                    <frame duration="1" hotspotX="0.383562" hotspotY="0.410959" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>Level1.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder expanded="1" />
+    <music-folder expanded="1" />
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
