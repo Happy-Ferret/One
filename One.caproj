@@ -16,7 +16,6 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
     </used-behaviors>
     <used-effects />
@@ -40,7 +39,7 @@
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D web</prop>
-        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview browser">Firefox</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -74,11 +73,6 @@
         </object-type>
         <object-type name="Particles" sid="8412025721790536">
             <plugin id="Particles" />
-            <behaviors>
-                <behavior-type name="Pin" sid="4505586658587406">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
             <texture />
         </object-type>
         <object-type name="Sprite2" sid="5147922464081675">
@@ -86,6 +80,9 @@
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="5977743250990602">
                     <behavior id="shadowcaster" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="84831864705687">
+                    <behavior id="EightDir" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -105,8 +102,41 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9929821213794467" speed="5">
-                    <frame duration="1" hotspotX="0.383562" hotspotY="0.410959" />
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9929821213794467" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.513158" hotspotY="0.487179">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513158" hotspotY="0.487179">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Collision" sid="3110394490259673">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6971228955081702" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.681818" />
                 </animation>
             </animation-folder>
         </object-type>
