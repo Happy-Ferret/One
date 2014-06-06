@@ -2,7 +2,7 @@
 <c2layout>
     <name>Level1</name>
     <sid>6920287174519644</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Level1</event-sheet>
     <size>
         <width>1024</width>
         <height>768</height>
