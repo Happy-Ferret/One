@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level2</name>
+    <events>
+        <event-block sid="5536547536219288">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5651807969192014" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="7587109034705199" type="Vanisher" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2419481670174642" type="Vanisher">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5089706006558052">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2479523683260963" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="2340909528854856" type="Vanisher" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1219274495785642" type="Vanisher">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7081535296452013">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8518329887930513" type="Player">
+                    <param id="0" name="Object">Vanisher</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="6261064128314115" type="Vanisher" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="2060546915267325" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

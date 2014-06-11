@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>Happy-Ferret.One</app-id>
     <unique-id>t4zrro740hcz</unique-id>
-    <saved-with-version>17000</saved-with-version>
+    <saved-with-version>17100</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -105,8 +105,19 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9929821213794467" speed="20">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9929821213794467" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.153846" y="0.157895" />
+                            <point x="0.5" y="0.0131579" />
+                            <point x="0.846154" y="0.157895" />
+                            <point x="0.987179" y="0.5" />
+                            <point x="0.858974" y="0.855263" />
+                            <point x="0.5" y="1" />
+                            <point x="0.128205" y="0.868421" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.513158" hotspotY="0.487179">
                         <collision-poly>
                             <point x="1" y="0" />
@@ -161,17 +172,27 @@
         <object-type name="Browser" sid="7481104581090259">
             <plugin id="Browser" />
         </object-type>
+        <object-type name="Vanisher" sid="2973813028731467">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4136746251617891" speed="5">
+                    <frame duration="1" hotspotX="1.45349" hotspotY="1.62338" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>MainMenu.xml</layout>
         <layout>Level1.xml</layout>
+        <layout>Level2.xml</layout>
         <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Level1.xml</event-sheet>
         <event-sheet>MainMenu.xml</event-sheet>
         <event-sheet>Credits.xml</event-sheet>
+        <event-sheet>Level2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="26">
