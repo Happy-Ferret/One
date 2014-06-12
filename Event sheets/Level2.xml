@@ -3,6 +3,98 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level2</name>
     <events>
+        <comment>Global ruleset</comment>
+        <event-block sid="5742287741876367">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6718996750916624" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="8043018467186342" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="595820516849172">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6033610811127039" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7406450227557769" type="Player">
+                    <param id="0" name="Animation">&quot;Back&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2592878516906247">
+            <conditions>
+                <condition id="2" name="Key is down" sid="389541601569479" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7681920082141045" type="Player">
+                    <param id="0" name="Animation">&quot;Forward&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4752191690670858">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9381189165603674" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="2586576509419098" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="2435106839014727" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1604601561201144" type="Player">
+                    <param id="0" name="Animation">&quot;Back&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2562119930699546">
+            <conditions>
+                <condition id="2" name="Key is down" sid="3510391603984555" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="255178284987258" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="3795543044069332" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7626495749346463" type="Player">
+                    <param id="0" name="Animation">&quot;Forward&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5189700813545748">
+            <conditions>
+                <condition id="7" name="On any key released" sid="3727593980700491" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="9055272207042974" type="Player" />
+            </actions>
+        </event-block>
+        <comment>Level specific mechanics</comment>
+        <event-block sid="7030491819675902">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5526104783765657" type="Player">
+                    <param id="0" name="Object">Collision</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="4738555431429343" type="System" />
+            </actions>
+        </event-block>
         <event-block sid="5536547536219288">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="5651807969192014" type="System">
