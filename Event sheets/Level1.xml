@@ -11,6 +11,7 @@
             </conditions>
             <actions>
                 <action id="2" name="Stop" sid="689816267218721" type="Player" />
+                <action id="2" name="Stop" sid="68494690467923" type="Lifebar" />
             </actions>
         </event-block>
         <event-block sid="7111439085588705">

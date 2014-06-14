@@ -240,6 +240,74 @@
         <object-type name="INTRO" sid="6150491004318377">
             <plugin id="Text" />
         </object-type>
+        <object-type global="1" name="Lifebar" sid="3685870880969327">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9961291803523542" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.02" hotspotY="0.515152">
+                        <collision-poly>
+                            <point x="0.00625" y="0.149254" />
+                            <point x="0.021875" y="0.0149254" />
+                            <point x="0.036875" y="0.164179" />
+                            <point x="0.041875" y="0.492537" />
+                            <point x="0.036875" y="0.835821" />
+                            <point x="0.021875" y="0.985075" />
+                            <point x="0.006875" y="0.835821" />
+                            <point x="0.000625" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.02" hotspotY="0.515152">
+                        <collision-poly>
+                            <point x="0.00625" y="0.149254" />
+                            <point x="0.021875" y="0.0149254" />
+                            <point x="0.036875" y="0.164179" />
+                            <point x="0.041875" y="0.492537" />
+                            <point x="0.036875" y="0.835821" />
+                            <point x="0.021875" y="0.985075" />
+                            <point x="0.006875" y="0.835821" />
+                            <point x="0.000625" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.02" hotspotY="0.515152">
+                        <collision-poly>
+                            <point x="0.00625" y="0.149254" />
+                            <point x="0.021875" y="0.0149254" />
+                            <point x="0.036875" y="0.164179" />
+                            <point x="0.041875" y="0.492537" />
+                            <point x="0.036875" y="0.835821" />
+                            <point x="0.021875" y="0.985075" />
+                            <point x="0.006875" y="0.835821" />
+                            <point x="0.000625" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.02" hotspotY="0.515152">
+                        <collision-poly>
+                            <point x="0.00625" y="0.149254" />
+                            <point x="0.021875" y="0.0149254" />
+                            <point x="0.036875" y="0.164179" />
+                            <point x="0.041875" y="0.492537" />
+                            <point x="0.036875" y="0.835821" />
+                            <point x="0.021875" y="0.985075" />
+                            <point x="0.006875" y="0.835821" />
+                            <point x="0.000625" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.02" hotspotY="0.515152">
+                        <collision-poly>
+                            <point x="0.00625" y="0.149254" />
+                            <point x="0.021875" y="0.0149254" />
+                            <point x="0.036875" y="0.164179" />
+                            <point x="0.041875" y="0.492537" />
+                            <point x="0.036875" y="0.835821" />
+                            <point x="0.021875" y="0.985075" />
+                            <point x="0.006875" y="0.835821" />
+                            <point x="0.000625" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
