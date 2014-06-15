@@ -88,8 +88,10 @@
         </event-block>
         <event-block sid="1437742124276891">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="3214975950717515" type="Player">
-                    <param id="0" name="Object">Collision</param>
+                <condition id="9" inverted="1" name="Is overlapping at offset" sid="6412543570867315" type="Player">
+                    <param id="0" name="Object">Tiles</param>
+                    <param id="1" name="Offset X">30</param>
+                    <param id="2" name="Offset Y">30</param>
                 </condition>
             </conditions>
             <actions>

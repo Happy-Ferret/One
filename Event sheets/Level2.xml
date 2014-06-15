@@ -86,11 +86,7 @@
         </event-block>
         <comment>Level specific mechanics</comment>
         <event-block sid="7030491819675902">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5526104783765657" type="Player">
-                    <param id="0" name="Object">Collision</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="-26" name="Restart layout" sid="4738555431429343" type="System" />
             </actions>

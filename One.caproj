@@ -200,14 +200,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Collision" sid="3110394490259673">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6971228955081702" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.681818" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Title" sid="9890299582832317">
             <plugin id="Text" />
         </object-type>
@@ -309,7 +301,14 @@
             </animation-folder>
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">
+            <members>
+                <member>Sprite</member>
+                <member>Vanisher</member>
+            </members>
+        </family>
+    </families>
     <layout-folder expanded="1">
         <layout>MainMenu.xml</layout>
         <layout>Level1.xml</layout>
