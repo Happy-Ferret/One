@@ -300,6 +300,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="1879864038176775">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">
