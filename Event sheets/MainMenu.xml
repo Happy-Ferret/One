@@ -37,5 +37,16 @@
                 <action id="1" name="Close" sid="3609070260449122" type="Browser" />
             </actions>
         </event-block>
+        <event-block sid="9550962296775243">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1287778554142735" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9436806720265455" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

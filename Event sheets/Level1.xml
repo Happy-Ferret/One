@@ -96,6 +96,109 @@
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="7036063339762694" type="System" />
+                <action id="-11" name="Subtract from" sid="2258187343189109" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Lifebar</comment>
+        <event-block sid="2655092250565848">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="372886086626739" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3025194334255608" type="Lifebar">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4439880736437147">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5684898443004966" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2212891308855566" type="Lifebar">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4121407853781119">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7044379508184271" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="6921889512167416" type="Lifebar">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9332371280035417">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4794601031052588" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="120810173868192" type="Lifebar">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1087630614564508">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7812356855199236" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="9151654523716535" type="Lifebar">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7380845606661722">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4952401663925722" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3451094132717162" type="Lifebar">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3955939300950437">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7194676101889547" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9771499216510608" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
             </actions>
         </event-block>
         <comment>Level specific mechanics</comment>
