@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level3</name>
+    <events>
+        <comment>Global ruleset</comment>
+        <event-block sid="3293301697167224">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2592338343657676" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="2587893189032907" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="9743873977497952">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9230882509627781" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7682039724172335" type="Player">
+                    <param id="0" name="Animation">&quot;Back&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4714541929238367">
+            <conditions>
+                <condition id="2" name="Key is down" sid="8870955803284593" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5685148070148913" type="Player">
+                    <param id="0" name="Animation">&quot;Forward&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2707911422045885">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6694272475706666" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="5762011614462839" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="8459150304145166" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="418104320384674" type="Player">
+                    <param id="0" name="Animation">&quot;Back&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6178106426113404">
+            <conditions>
+                <condition id="2" name="Key is down" sid="2250265610860405" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="8909845862945515" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="6262280218031198" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5116050647352893" type="Player">
+                    <param id="0" name="Animation">&quot;Forward&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4944624908669917">
+            <conditions>
+                <condition id="7" name="On any key released" sid="2831277062864033" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="3076477429683301" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="9029086724861412">
+            <conditions>
+                <condition id="9" inverted="1" name="Is overlapping at offset" sid="7229789064122726" type="Player">
+                    <param id="0" name="Object">Tiles</param>
+                    <param id="1" name="Offset X">30</param>
+                    <param id="2" name="Offset Y">30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="4303396148193151" type="System" />
+                <action id="-11" name="Subtract from" sid="4497241409409686" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Lifebar</comment>
+        <event-block sid="804519468942297">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="743269155114194" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="8063139712569338" type="Lifebar">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="852954063266314">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2890283516733499" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1460412731080555" type="Lifebar">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4390816215809298">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5245481364478579" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1878396889733993" type="Lifebar">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1965361456817341">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9429054290605663" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="462231415619744" type="Lifebar">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3577091093761616">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9350416911294261" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1083296810848551" type="Lifebar">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="115102011086845">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7755646104120373" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1647520810114456" type="Lifebar">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9578031644640419">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4887177254747186" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="581828301180936" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level specific mechanics</comment>
+        <event-block sid="3774350551614126">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6902274072952748" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="9688294099394939" type="Vanisher" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3520200093707238" type="Vanisher">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8781417627903237">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="502238065320969" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="3672235294458847" type="Vanisher" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="403389489311362" type="Vanisher">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5753456092183403">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="9643141643761432" type="Player">
+                    <param id="0" name="Object">Vanisher</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="7135087039057481" type="Vanisher" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="3051936570896524" type="System" />
+                <action id="-11" name="Subtract from" sid="1742886608228151" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7246957154894303">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1996060161770322" type="Player">
+                    <param id="0" name="Object">Eraser</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="1756904121185179" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="778720169055782" type="Eraser">
+                    <param id="0" name="Instance variable">Transparency</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8005934777947579" type="Eraser">
+                    <param id="0" name="Opacity">Eraser.Transparency</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1049774936659051">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5826149381390121" type="Player">
+                    <param id="0" name="Object">Eraser</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="2526964404843211" type="Eraser">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="6811138768920524" type="System" />
+                <action id="-11" name="Subtract from" sid="1115738853223225" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

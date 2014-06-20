@@ -303,10 +303,22 @@
         <object-type name="Text" sid="1879864038176775">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Eraser" sid="8730771851080783">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Transparency" sid="6981156204389415" type="number" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7349689484868003" speed="5">
+                    <frame duration="1" hotspotX="1.45349" hotspotY="1.62338" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">
             <members>
+                <member>Eraser</member>
                 <member>Sprite</member>
                 <member>Vanisher</member>
             </members>
@@ -316,6 +328,7 @@
         <layout>MainMenu.xml</layout>
         <layout>Level1.xml</layout>
         <layout>Level2.xml</layout>
+        <layout>Level3.xml</layout>
         <layout>Credits.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
@@ -325,6 +338,7 @@
         <event-sheet>Credits.xml</event-sheet>
         <event-sheet>Level2.xml</event-sheet>
         <event-sheet>Intro.xml</event-sheet>
+        <event-sheet>Level3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="26">
