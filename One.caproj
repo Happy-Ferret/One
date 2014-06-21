@@ -11,6 +11,7 @@
     <saved-with-version>17300</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Clay.io" id="Clay" version="1">Clay.io</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -314,6 +315,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Clayio" sid="6443947734936126">
+            <plugin id="Clay" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">
@@ -348,6 +352,14 @@
         </global-instance>
         <global-instance type="Browser" uid="23" />
         <global-instance type="Keyboard" uid="52" />
+        <global-instance type="Clayio" uid="62">
+            <properties>
+                <api-key>one</api-key>
+                <debug-mode>Disabled</debug-mode>
+                <use-clayio-styles>Enabled</use-clayio-styles>
+                <use-clayio-loader>Disabled</use-clayio-loader>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
