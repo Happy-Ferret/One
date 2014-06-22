@@ -3,6 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenu</name>
     <events>
+        <event-block sid="9550962296775243">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1287778554142735" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9436806720265455" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="3333357666824387">
             <conditions>
                 <condition id="3" name="On touched object" sid="3393535479339762" type="Touch">
@@ -37,14 +48,134 @@
                 <action id="1" name="Close" sid="3609070260449122" type="Browser" />
             </actions>
         </event-block>
-        <event-block sid="9550962296775243">
+        <event-block sid="94687419626688">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="1287778554142735" type="System" />
+                <condition id="3" name="On touched object" sid="9795203946258222" type="Touch">
+                    <param id="0" name="Object">ACHIEVEMENTS</param>
+                </condition>
+                <condition id="1" name="Is online" sid="3417058564118602" type="Browser" />
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="9436806720265455" type="System">
-                    <param id="0" name="Variable">Lives</param>
-                    <param id="1" name="Value">3</param>
+                <action id="26" name="Prompt Login" sid="4266486756015925" type="Clayio" />
+            </actions>
+        </event-block>
+        <event-block sid="9863640170647213">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="6022608760417452" type="Mouse">
+                    <param id="0" name="Object">PLAY</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="5465829261633637" type="Option">
+                    <param id="0" name="Unique ID">92</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1503466116464456" type="Option">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5683423497998928">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9610302995053343" type="Mouse">
+                    <param id="0" name="Object">CREDITS</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="4646606964267631" type="Option">
+                    <param id="0" name="Unique ID">93</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9298005281097162" type="Option">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3563874071706683">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="4103892711058148" type="Mouse">
+                    <param id="0" name="Object">EXIT</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="2903793534654361" type="Option">
+                    <param id="0" name="Unique ID">94</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="272921211688768" type="Option">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3171335599404688">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1167357122346649" type="Mouse">
+                    <param id="0" name="Object">ACHIEVEMENTS</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="2638804596216952" type="Option">
+                    <param id="0" name="Unique ID">95</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="8799353959462855" type="Option">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7823483905904514">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8492731804496114" type="Mouse">
+                    <param id="0" name="Object">PLAY</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="5185877677879575" type="Option">
+                    <param id="0" name="Unique ID">92</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3548518009102671" type="Option">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9624985015000019">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="6972246139777014" type="Mouse">
+                    <param id="0" name="Object">CREDITS</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="9052413119833252" type="Option">
+                    <param id="0" name="Unique ID">93</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="890141651943346" type="Option">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3276687883984233">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="3061091573274966" type="Mouse">
+                    <param id="0" name="Object">EXIT</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="1616482005176118" type="Option">
+                    <param id="0" name="Unique ID">94</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9066405547262506" type="Option">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9571007679805805">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="2651361036434141" type="Mouse">
+                    <param id="0" name="Object">ACHIEVEMENTS</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="7249684293179748" type="Option">
+                    <param id="0" name="Unique ID">95</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4517551529288203" type="Option">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
