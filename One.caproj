@@ -11,7 +11,6 @@
     <saved-with-version>17300</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Clay.io" id="Clay" version="1">Clay.io</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -110,18 +109,18 @@
                 <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9929821213794467" speed="15">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.153846" y="0.157895" />
-                            <point x="0.5" y="0.0131579" />
-                            <point x="0.846154" y="0.157895" />
-                            <point x="0.987179" y="0.5" />
-                            <point x="0.858974" y="0.855263" />
-                            <point x="0.5" y="1" />
-                            <point x="0.128205" y="0.868421" />
-                            <point x="0" y="0.5" />
+                            <point x="0.1625" y="0.166667" />
+                            <point x="0.5" y="0.025641" />
+                            <point x="0.8375" y="0.166667" />
+                            <point x="0.975" y="0.5" />
+                            <point x="0.85" y="0.846154" />
+                            <point x="0.5" y="0.987179" />
+                            <point x="0.1375" y="0.858974" />
+                            <point x="0.0125" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="5" loop="1" name="Forward" pingpong="0" repeatcount="1" repeatto="0" sid="6121981488172163" speed="15">
+                <animation framecount="5" loop="1" name="Forward" pingpong="0" repeatcount="1" repeatto="0" sid="6121981488172163" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.153846" y="0.157895" />
@@ -134,7 +133,7 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.513158" hotspotY="0.487179">
+                    <frame duration="1" hotspotX="0.514706" hotspotY="0.5">
                         <collision-poly>
                             <point x="1" y="0" />
                             <point x="1" y="1" />
@@ -150,7 +149,7 @@
                             <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.513158" hotspotY="0.487179">
+                    <frame duration="1" hotspotX="0.514706" hotspotY="0.5">
                         <collision-poly>
                             <point x="0" y="1" />
                             <point x="0" y="0" />
@@ -160,7 +159,7 @@
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="5" loop="1" name="Back" pingpong="0" repeatcount="1" repeatto="0" sid="1770324684427036" speed="15">
+                <animation framecount="5" loop="1" name="Back" pingpong="0" repeatcount="1" repeatto="0" sid="1770324684427036" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.153846" y="0.157895" />
@@ -173,7 +172,7 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.513158" hotspotY="0.487179">
+                    <frame duration="1" hotspotX="0.514706" hotspotY="0.484848">
                         <collision-poly>
                             <point x="0" y="1" />
                             <point x="0" y="0" />
@@ -189,7 +188,7 @@
                             <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.513158" hotspotY="0.487179">
+                    <frame duration="1" hotspotX="0.514706" hotspotY="0.484848">
                         <collision-poly>
                             <point x="1" y="0" />
                             <point x="1" y="1" />
@@ -315,9 +314,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Clayio" sid="6443947734936126">
-            <plugin id="Clay" />
-        </object-type>
     </object-folder>
     <families>
         <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">
@@ -352,14 +348,6 @@
         </global-instance>
         <global-instance type="Browser" uid="23" />
         <global-instance type="Keyboard" uid="52" />
-        <global-instance type="Clayio" uid="62">
-            <properties>
-                <api-key>one</api-key>
-                <debug-mode>Disabled</debug-mode>
-                <use-clayio-styles>Enabled</use-clayio-styles>
-                <use-clayio-loader>Disabled</use-clayio-loader>
-            </properties>
-        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
