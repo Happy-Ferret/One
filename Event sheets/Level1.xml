@@ -202,6 +202,24 @@
             </actions>
         </event-block>
         <comment>Level specific mechanics</comment>
+        <event-block sid="1133420366815263">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6061428689311136" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-2" inverted="1" name="Compare Y" sid="9789096183765046" type="Sprite2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">232</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="8970625565101441" type="Sprite2">
+                    <param id="0" name="X">419</param>
+                    <param id="1" name="Y">232</param>
+                </action>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="2876458466023926" type="Sprite2" />
+            </actions>
+        </event-block>
         <event-block sid="9769903891668169">
             <conditions>
                 <condition id="-1" name="Every tick" sid="3059794848613388" type="System" />
@@ -211,6 +229,24 @@
                     <param id="0" name="X">Sprite2.X</param>
                     <param id="1" name="Y">Sprite2.Y-10</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="8463166097715577">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5230905482480117" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="9900991765399833" type="Sprite2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">232</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="4121748116702122" type="Sprite2">
+                    <param id="0" name="X">419</param>
+                    <param id="1" name="Y">470</param>
+                </action>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="6185203685998424" type="Sprite2" />
             </actions>
         </event-block>
     </events>

@@ -304,14 +304,17 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="8Direction">
+                        <behavior-instance type="Pathfinding">
                             <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
                                 <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>360 degree (smooth)</set-angle>
-                                <default-controls>Yes</default-controls>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>Yes</rotate-object>
+                                <diagonals>Enabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -319,8 +322,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>745</x>
-                        <y>344</y>
+                        <x>419</x>
+                        <y>470</y>
                         <z>0</z>
                         <width>12</width>
                         <height>12</height>
@@ -440,8 +443,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>756</x>
-                        <y>330</y>
+                        <x>430</x>
+                        <y>456</y>
                         <z>0</z>
                         <width>-15</width>
                         <height>9</height>

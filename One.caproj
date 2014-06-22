@@ -22,6 +22,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
     </used-behaviors>
     <used-effects />
@@ -87,8 +88,8 @@
                 <behavior-type name="ShadowCaster" sid="5977743250990602">
                     <behavior id="shadowcaster" />
                 </behavior-type>
-                <behavior-type name="8Direction" sid="84831864705687">
-                    <behavior id="EightDir" />
+                <behavior-type name="Pathfinding" sid="8362536812520822">
+                    <behavior id="Pathfinding" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -332,6 +333,9 @@
                     <frame duration="1" hotspotX="2.42308" hotspotY="3.6" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="8692398145035429">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
