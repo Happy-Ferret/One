@@ -337,6 +337,18 @@
         <object-type name="Text2" sid="8692398145035429">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Essence" sid="2407889436692686">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Essence_sprite" sid="325268156265775">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4716442546501723" speed="5">
+                    <frame duration="1" hotspotX="15.625" hotspotY="15.625" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">

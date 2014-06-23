@@ -237,5 +237,25 @@
                 <action id="-26" name="Restart layout" sid="2060546915267325" type="System" />
             </actions>
         </event-block>
+        <event-block sid="3685987065969201">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6933955793183324" type="Player">
+                    <param id="0" name="Object">Essence_sprite</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="7053556759195186" type="Essence_sprite">
+                    <param id="0" name="Unique ID">98</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="3450092093188147" type="Essence">
+                    <param id="0" name="Unique ID">97</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1934358014111932" type="Essence" />
+                <action id="-10" name="Add to" sid="2954086778181611" type="System">
+                    <param id="0" name="Variable">Essences</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
