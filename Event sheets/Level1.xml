@@ -13,6 +13,10 @@
             <actions>
                 <action id="2" name="Stop" sid="689816267218721" type="Player" />
                 <action id="2" name="Stop" sid="68494690467923" type="Lifebar" />
+                <action id="-26" name="Move to layer" sid="3027110898028527" type="Lifebar">
+                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                </action>
+                <action id="-24" name="Move to top" sid="32009098534187" type="Lifebar" />
             </actions>
         </event-block>
         <event-block sid="7111439085588705">

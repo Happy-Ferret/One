@@ -2,5 +2,19 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Credits</name>
-    <events />
+    <events>
+        <event-block sid="3945967404498441">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3753655467749659" type="Touch">
+                    <param id="0" name="Object">Text</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="5283007362003171" type="Browser">
+                    <param id="0" name="URL">&quot;https://github.com/Happy-Ferret/One&quot;</param>
+                    <param id="1" name="Tag">&quot;Github&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
