@@ -214,50 +214,50 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="7416299563181341">
+        <event-block sid="3961060601709061">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="713209431757529" type="System">
+                <condition id="1" name="Is overlapping another object" sid="4121743903610218" type="Sprite2">
+                    <param id="0" name="Object">Waypoint</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="3818106952399959" type="Waypoint">
+                    <param id="0" name="Unique ID">104</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="4401551521049106" type="System">
                     <param id="0" name="Interval (seconds)">0.2</param>
                 </condition>
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="3820170553256393">
-                    <conditions>
-                        <condition id="-2" name="Compare Y" sid="1402362048394416" type="Sprite2">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Y co-ordinate">470</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="3976770621498127" type="Sprite2">
-                            <param id="0" name="X">Sprite2.X</param>
-                            <param id="1" name="Y">223</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3448291360881198">
-                    <conditions>
-                        <condition id="-2" name="Compare Y" sid="8064857963217249" type="Sprite2">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Y co-ordinate">223</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="7461544002958354" type="Sprite2">
-                            <param id="0" name="X">Sprite2.X</param>
-                            <param id="1" name="Y">223</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="6220987588528825" type="Sprite2">
+                    <param id="0" name="X">Sprite2.X</param>
+                    <param id="1" name="Y">123</param>
+                </action>
+            </actions>
         </event-block>
-        <event-block sid="8953690287684083">
+        <event-block sid="3073434332824859">
             <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="951313331306467" type="Sprite2" />
+                <condition id="1" name="Is overlapping another object" sid="9741753691711648" type="Sprite2">
+                    <param id="0" name="Object">Waypoint</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="8480115821699946" type="Waypoint">
+                    <param id="0" name="Unique ID">103</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="8844788927739628" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="2931170975152535" type="Sprite2" />
+                <action behavior="Pathfinding" id="0" name="Find path" sid="6553158311362991" type="Sprite2">
+                    <param id="0" name="X">Sprite2.X</param>
+                    <param id="1" name="Y">600</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7618430179181321">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="1522421551538674" type="Sprite2" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="6903633446433292" type="Sprite2" />
             </actions>
         </event-block>
     </events>
