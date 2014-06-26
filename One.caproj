@@ -359,9 +359,13 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6940128558494095" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.63" />
+                    <frame duration="1" hotspotX="0.535211" hotspotY="0.637255" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Particles2" sid="4488348767369694">
+            <plugin id="Particles" />
+            <texture />
         </object-type>
     </object-folder>
     <families>
@@ -379,6 +383,7 @@
         <layout>Level1.xml</layout>
         <layout>Level2.xml</layout>
         <layout>Level3.xml</layout>
+        <layout>Level4.xml</layout>
         <layout>Credits.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
@@ -389,6 +394,7 @@
         <event-sheet>Level2.xml</event-sheet>
         <event-sheet>Intro.xml</event-sheet>
         <event-sheet>Level3.xml</event-sheet>
+        <event-sheet>Level4.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="26">
