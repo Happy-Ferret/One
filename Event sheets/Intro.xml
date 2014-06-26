@@ -15,5 +15,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="1299064701268945">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4126346986282119" type="Touch">
+                    <param id="0" name="Object">Stub</param>
+                </condition>
+                <condition id="1" name="Is online" sid="3544290948934532" type="Browser" />
+                <condition id="0" name="Clay.io Ready" sid="4219161625707239" type="Clayio" />
+            </conditions>
+            <actions>
+                <action id="6" name="Award Achievement" sid="7503908291615753" type="Clayio">
+                    <param id="0" name="Achievement ID">4718</param>
+                    <param id="1" name="Show Notification">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
