@@ -15,3 +15,13 @@ Finish the first three levels without losing a life.
 ###Redneck (20)
 
 Collect all red essences hidden throughout the levels.
+
+
+###Immortal (30)
+
+Finished the whole game without losing a single life.
+
+
+###Collector (35)
+
+Unlocked all achievements.
