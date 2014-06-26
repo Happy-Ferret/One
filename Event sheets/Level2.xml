@@ -257,5 +257,62 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9332317901944145">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4614083858557537" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="5409972312397453" type="Particles">
+                    <param id="0" name="X">Sprite2.X</param>
+                    <param id="1" name="Y">Sprite2.Y-10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5200905483629645">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1234260691079192" type="Sprite2">
+                    <param id="0" name="Object">Waypoint</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="6017187800564815" type="Waypoint">
+                    <param id="0" name="Unique ID">114</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="6640041177206741" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="4567870968930598" type="Sprite2">
+                    <param id="0" name="X">400</param>
+                    <param id="1" name="Y">Sprite2.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9228294084525501">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="9208956039626302" type="Sprite2">
+                    <param id="0" name="Object">Waypoint</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="7655253973855692" type="Waypoint">
+                    <param id="0" name="Unique ID">116</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="8645984733087526" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="9307134181060943" type="Sprite2">
+                    <param id="0" name="X">700</param>
+                    <param id="1" name="Y">Sprite2.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="913670244954798">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="2821434628394374" type="Sprite2" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="3125327203456616" type="Sprite2" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

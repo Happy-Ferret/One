@@ -379,7 +379,7 @@
                 </instance>
                 <instance type="Sprite2" uid="39">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -410,8 +410,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>788</x>
-                        <y>125</y>
+                        <x>682</x>
+                        <y>355</y>
                         <z>0</z>
                         <width>12</width>
                         <height>12</height>
@@ -440,6 +440,50 @@
                         <depth>0</depth>
                         <hotspotX>15.625</hotspotX>
                         <hotspotY>15.625</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Waypoint" uid="114">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>699.703125</x>
+                        <y>407.40625</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>85</height>
+                        <depth>0</depth>
+                        <hotspotX>0.828125</hotspotX>
+                        <hotspotY>1.171875</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Waypoint" uid="116">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>400.5</x>
+                        <y>407</y>
+                        <z>0</z>
+                        <width>53</width>
+                        <height>85</height>
+                        <depth>0</depth>
+                        <hotspotX>0.828125</hotspotX>
+                        <hotspotY>1.171875</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -553,8 +597,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>779</x>
-                        <y>105</y>
+                        <x>690</x>
+                        <y>356</y>
                         <z>0</z>
                         <width>-15</width>
                         <height>9</height>
