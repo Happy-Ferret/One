@@ -47,7 +47,7 @@
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D web</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">Node-Webkit</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -57,22 +57,6 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5950276714008816" speed="5">
                     <frame duration="1" hotspotX="1.34884" hotspotY="0.402597" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite3" sid="9653791182317695">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7765886887686901" speed="5">
-                    <frame duration="1" hotspotX="0.535714" hotspotY="0.428571" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite4" sid="3579491131322747">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438008720040933" speed="5">
-                    <frame duration="1" hotspotX="1.45349" hotspotY="1.62338" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -371,11 +355,20 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Goal" sid="7624548622173202">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6940128558494095" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.63" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">
             <members>
                 <member>Eraser</member>
+                <member>Goal</member>
                 <member>Sprite</member>
                 <member>Vanisher</member>
             </members>

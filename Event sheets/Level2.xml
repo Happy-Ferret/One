@@ -314,5 +314,17 @@
                 <action behavior="Pathfinding" id="1" name="Move along path" sid="3125327203456616" type="Sprite2" />
             </actions>
         </event-block>
+        <event-block sid="9959437079596237">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1298938297819299" type="Player">
+                    <param id="0" name="Object">Goal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8218857019691091" type="System">
+                    <param id="0" name="Layout">Level3</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
