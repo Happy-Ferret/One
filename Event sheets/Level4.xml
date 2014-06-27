@@ -403,7 +403,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="5728233883261914" type="System">
-                    <param id="0" name="Layout">Level2</param>
+                    <param id="0" name="Layout">Level5</param>
                 </action>
             </actions>
         </event-block>
