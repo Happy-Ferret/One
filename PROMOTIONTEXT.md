@@ -26,3 +26,8 @@ Future updates include (but are not limited to):
 * A full blown level editor 
 * A community page to share user created content on.
 * Lots and lots of additional achievements (possibly Desura and Steam accolades/achievements, as well).
+
+##Known issues
+
+* At times the clay.io login window may disappear, prompting the user to select this option one more time. 
+  This usually happens when traffic is quite high. Unfortunately, I have little to no control over this. 
