@@ -386,6 +386,7 @@
         <layout>Level4.xml</layout>
         <layout>Level5.xml</layout>
         <layout>Level6.xml</layout>
+        <layout>Level7.xml</layout>
         <layout>Credits.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
@@ -399,6 +400,7 @@
         <event-sheet>Level4.xml</event-sheet>
         <event-sheet>Level5.xml</event-sheet>
         <event-sheet>Level6.xml</event-sheet>
+        <event-sheet>Level7.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="26">
