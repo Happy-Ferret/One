@@ -10,6 +10,7 @@
     <unique-id>t4zrro740hcz</unique-id>
     <saved-with-version>17300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Clay.io" id="Clay" version="1">Clay.io</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -367,6 +368,9 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+        <object-type name="Audio" sid="4014499012281155">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Tiles" plugin-id="Sprite" sid="4202422704693322">
@@ -380,6 +384,7 @@
     </families>
     <layout-folder expanded="1">
         <layout>MainMenu.xml</layout>
+        <layout>Intro.xml</layout>
         <layout>Level1.xml</layout>
         <layout>Level2.xml</layout>
         <layout>Level3.xml</layout>
@@ -389,7 +394,6 @@
         <layout>Level7.xml</layout>
         <layout>Level8.xml</layout>
         <layout>Credits.xml</layout>
-        <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Level1.xml</event-sheet>
@@ -421,8 +425,36 @@
             </properties>
         </global-instance>
         <global-instance type="Mouse" uid="91" />
+        <global-instance type="Audio" uid="229">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="Collect.m4a" />
+        <file name="Collect.ogg" />
+        <file name="Collect.wav" />
+        <file name="Death.m4a" />
+        <file name="Death.ogg" />
+        <file name="Death.wav" />
+        <file name="Intro.m4a" />
+        <file name="Intro.ogg" />
+        <file name="Intro.wav" />
+        <file name="Next_Level.m4a" />
+        <file name="Next_Level.ogg" />
+        <file name="Next_Level.wav" />
+    </sounds-folder>
     <music-folder expanded="1" />
     <files-folder expanded="1">
         <file-folder expanded="0" name="Icons">

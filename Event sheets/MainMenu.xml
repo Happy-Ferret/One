@@ -179,5 +179,16 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6780091936151991">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="5872696150650242" type="System" />
+            </conditions>
+            <actions>
+                <action id="9" name="Preload (by name)" sid="6040333060211432" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -30,5 +30,30 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8705436244707548">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5728154879893662" type="Keyboard">
+                    <param id="0" name="Key">32 (Leer)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4491748653521902" type="System">
+                    <param id="0" name="Layout">Level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3392339264776286">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3337362782641185" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="241518841948495" type="Audio">
+                    <param id="0" name="Audio file">Intro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

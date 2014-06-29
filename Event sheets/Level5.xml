@@ -305,8 +305,42 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="7671574858154264" type="Audio">
+                    <param id="0" name="Audio file">Next_Level</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="3342703537560932" type="System">
                     <param id="0" name="Layout">Level6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7642527666814295">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5027710433570513" type="Player">
+                    <param id="0" name="Object">Essence</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3416075880901893" type="Audio">
+                    <param id="0" name="Audio file">Collect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="757948051733776">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="5728467582778944" type="Player" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2552894485374623" type="Audio">
+                    <param id="0" name="Audio file">Death</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
