@@ -28,6 +28,10 @@
                     <param id="0" name="Achievement ID">4718</param>
                     <param id="1" name="Show Notification">0</param>
                 </action>
+                <action id="-10" name="Add to" sid="1451009862480941" type="System">
+                    <param id="0" name="Variable">Achievements</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8705436244707548">

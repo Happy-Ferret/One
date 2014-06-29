@@ -316,21 +316,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="5989743329844502">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="7403490370270772" type="Player">
-                    <param id="0" name="Object">Essence</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="5775119188758676" type="Audio">
-                    <param id="0" name="Audio file">Collect</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="9632864771171478">
             <conditions>
                 <condition id="-19" name="On destroyed" sid="9535149948141861" type="Player" />
@@ -342,6 +327,36 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="7394072801386974">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9004810752219701" type="Player">
+                    <param id="0" name="Object">Essence_sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="590985368858987" type="Audio">
+                    <param id="0" name="Audio file">Collect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4055193315325376" type="Essence_sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="1750822381057107">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4748418246957095" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="142097210061137" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="1451567737551204" type="System" />
             </actions>
         </event-block>
     </events>

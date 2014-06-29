@@ -228,13 +228,19 @@
         </event-block>
         <event-block sid="7081535296452013">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="8518329887930513" type="Player">
+                <condition id="9" name="Is overlapping at offset" sid="8518329887930513" type="Player">
                     <param id="0" name="Object">Vanisher</param>
+                    <param id="1" name="Offset X">30</param>
+                    <param id="2" name="Offset Y">30</param>
                 </condition>
                 <condition id="-9" inverted="1" name="Is visible" sid="6261064128314115" type="Vanisher" />
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="2060546915267325" type="System" />
+                <action id="-11" name="Subtract from" sid="2817668953512147" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3685987065969201">
@@ -332,21 +338,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9178962420655411">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8051307929391604" type="Player">
-                    <param id="0" name="Object">Essence</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="4722589956450043" type="Audio">
-                    <param id="0" name="Audio file">Collect</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="3258030748707553">
             <conditions>
                 <condition id="-19" name="On destroyed" sid="7926504606179647" type="Player" />
@@ -358,6 +349,36 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="105042386729029">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9876052972292953" type="Player">
+                    <param id="0" name="Object">Essence_sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2834764342295843" type="Audio">
+                    <param id="0" name="Audio file">Collect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3253731957278415" type="Essence_sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="3483291935891257">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7685332285081375" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="8606586735463713" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="7531228448335278" type="System" />
             </actions>
         </event-block>
     </events>

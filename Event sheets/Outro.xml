@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Outro</name>
+    <events>
+        <event-block sid="2370876655752195">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8857244817544445" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="8216499745131606" type="Text3">
+                    <param id="0" name="Instance variable">Transparency</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3901033026933393" type="Text3">
+                    <param id="0" name="Opacity">Text3.Transparency</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3883480826483501">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2792275539922535" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1785004450563552" type="Text3">
+                    <param id="0" name="Opacity">Text3.Transparency</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7992765205826731">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1739315712140845" type="Touch">
+                    <param id="0" name="Object">Text2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5329760615504288" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

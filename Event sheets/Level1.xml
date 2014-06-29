@@ -295,5 +295,19 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5105417668063859">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4149660486915417" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="8797627695180698" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="8301421055991708" type="System" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

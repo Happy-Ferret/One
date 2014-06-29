@@ -507,21 +507,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="1167786405533374">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8554109242558133" type="Player">
-                    <param id="0" name="Object">Essence</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="2623127991420755" type="Audio">
-                    <param id="0" name="Audio file">Collect</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="7025708063674471">
             <conditions>
                 <condition id="-19" name="On destroyed" sid="1686111398401552" type="Player" />
@@ -533,6 +518,60 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="378454840302157">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1046384812820616" type="Player">
+                    <param id="0" name="Object">Goal</param>
+                </condition>
+                <condition id="1" name="Is online" sid="9376482310715696" type="Browser" />
+                <condition id="0" name="Clay.io Ready" sid="5856356631482742" type="Clayio" />
+                <condition id="-14" name="Compare variable" sid="7233398106251488" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Award Achievement" sid="4296274410559555" type="Clayio">
+                    <param id="0" name="Achievement ID">4704</param>
+                    <param id="1" name="Show Notification">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="8347127678161617" type="System">
+                    <param id="0" name="Variable">Achievements</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1938597334597329">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8346222701257666" type="Player">
+                    <param id="0" name="Object">Essence_sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4105701425747191" type="Audio">
+                    <param id="0" name="Audio file">Collect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="304511720414781" type="Essence_sprite" />
+            </actions>
+        </event-block>
+        <event-block sid="1084627835721047">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7135867106872171" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="6375980591632856" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="3691370374348611" type="System" />
             </actions>
         </event-block>
     </events>

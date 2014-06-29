@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenu</name>
     <events>
+        <variable constant="0" name="Achievements" sid="5194331406364735" static="0" type="number">0</variable>
         <event-block sid="9550962296775243">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1287778554142735" type="System" />
@@ -187,6 +188,23 @@
                 <action id="9" name="Preload (by name)" sid="6040333060211432" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4128341451242941">
+            <conditions>
+                <condition id="1" name="Is online" sid="5226157853021582" type="Browser" />
+                <condition id="0" name="Clay.io Ready" sid="2881469098258403" type="Clayio" />
+                <condition id="-14" name="Compare variable" sid="2276602724367025" type="System">
+                    <param id="0" name="Variable">Achievements</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Award Achievement" sid="7346177609493389" type="Clayio">
+                    <param id="0" name="Achievement ID">4720</param>
+                    <param id="1" name="Show Notification">0</param>
                 </action>
             </actions>
         </event-block>
