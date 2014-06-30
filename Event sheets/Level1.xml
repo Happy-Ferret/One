@@ -309,5 +309,21 @@
                 <action id="-26" name="Restart layout" sid="8301421055991708" type="System" />
             </actions>
         </event-block>
+        <event-block sid="5370023593488792">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5937654685651005" type="System" />
+                <condition id="5" inverted="1" name="Is tag playing" sid="2390091196917991" type="Audio">
+                    <param id="0" name="Tag">&quot;Main&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9325991762770901" type="Audio">
+                    <param id="0" name="Audio file">Main</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Main&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

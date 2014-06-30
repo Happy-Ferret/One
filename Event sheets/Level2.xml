@@ -230,8 +230,8 @@
             <conditions>
                 <condition id="9" name="Is overlapping at offset" sid="8518329887930513" type="Player">
                     <param id="0" name="Object">Vanisher</param>
-                    <param id="1" name="Offset X">30</param>
-                    <param id="2" name="Offset Y">30</param>
+                    <param id="1" name="Offset X">0</param>
+                    <param id="2" name="Offset Y">0</param>
                 </condition>
                 <condition id="-9" inverted="1" name="Is visible" sid="6261064128314115" type="Vanisher" />
             </conditions>

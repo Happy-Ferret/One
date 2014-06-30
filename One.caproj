@@ -42,9 +42,9 @@
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">High quality</prop>
         <prop name="Enable WebGL">On</prop>
-        <prop name="Fullscreen in browser">Scale inner</prop>
+        <prop name="Fullscreen in browser">Letterbox integer scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D web</prop>
@@ -513,7 +513,9 @@
         <file name="Next_Level.ogg" />
         <file name="Next_Level.wav" />
     </sounds-folder>
-    <music-folder expanded="1" />
+    <music-folder expanded="1">
+        <file name="Main.ogg" />
+    </music-folder>
     <files-folder expanded="1">
         <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />
