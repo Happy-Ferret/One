@@ -477,7 +477,7 @@
         <global-instance type="Clayio" uid="89">
             <properties>
                 <api-key>one</api-key>
-                <debug-mode>Enabled</debug-mode>
+                <debug-mode>Disabled</debug-mode>
                 <use-clayio-styles>Enabled</use-clayio-styles>
                 <use-clayio-loader>Disabled</use-clayio-loader>
             </properties>
